@@ -7,7 +7,7 @@ using UnityEngine;
 public class Controller : MonoBehaviour
 {
     public TMP_Text itemText;
-    public TMP_Text upgradeText;
+    [SerializeField] private TMP_Text upgradeText;
     public TMP_Text automateText;
     public TMP_Text speedText;
     public double multiplier = 1;
