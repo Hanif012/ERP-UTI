@@ -8,26 +8,14 @@ public class UIController : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject[] tabs;
-    int index;
     void Start()
     {
-        index = 0;
         tabs[0].gameObject.SetActive(true);
         tabs[1].gameObject.SetActive(false);
         tabs[2].gameObject.SetActive(false);
+        tabs[3].gameObject.SetActive(false);
         
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if(index >= 3)
-        index = 3;
-
-        if(index < 0)
-        index = 0;
-    }
-
     public void tab1()
     {
         for(int i=0; i<tabs.Length; i++)
@@ -54,6 +42,16 @@ public class UIController : MonoBehaviour
         {
             tabs[i].gameObject.SetActive(false);
             tabs[2].gameObject.SetActive(true);
+
+        }
+    }
+
+    public void tab4()
+    {
+        for(int i=0; i<tabs.Length; i++)
+        {
+            tabs[i].gameObject.SetActive(false);
+            tabs[3].gameObject.SetActive(true);
 
         }
     }

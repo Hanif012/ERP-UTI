@@ -11,6 +11,8 @@ public class Controller : MonoBehaviour
     public void Start() 
     {
         data = new GameData();
+        CancelInvoke("Generate_Money");
+        InvokeRepeating("Generate_Money", 1f, 1f);
     }
     public void Update()
     {
