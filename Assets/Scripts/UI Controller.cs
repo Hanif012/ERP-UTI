@@ -55,5 +55,13 @@ public class UIController : MonoBehaviour
         }
     }
 
+    public void closeall()
+    {
+        for(int i=0; i<tabs.Length; i++)
+        {
+            tabs[i].gameObject.SetActive(false);
+        }
+    }
+
     
 }
