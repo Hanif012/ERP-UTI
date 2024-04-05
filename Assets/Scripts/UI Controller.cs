@@ -2,15 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.UIElements;
 
 public class UIController : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject[] tabs;
+    public Button[] buttons;
     void Start()
     {
-        tabs[0].gameObject.SetActive(true);
+        tabs[0].gameObject.SetActive(false);
         tabs[1].gameObject.SetActive(false);
         tabs[2].gameObject.SetActive(false);
         tabs[3].gameObject.SetActive(false);
@@ -22,7 +22,6 @@ public class UIController : MonoBehaviour
         {
             tabs[i].gameObject.SetActive(false);
             tabs[0].gameObject.SetActive(true);
-
         }
     }
 
@@ -55,4 +54,6 @@ public class UIController : MonoBehaviour
 
         }
     }
+
+    
 }
