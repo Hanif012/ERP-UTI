@@ -8,20 +8,18 @@ public class Controller : MonoBehaviour
 {
     public TMP_Text currencyText;
     public GameData data;
+    bool generatingMoney = true;
     public void Start() 
     {
         data = new GameData();
-        CancelInvoke("Generate_Money");
-        InvokeRepeating("Generate_Money", 1f, 1f);
+        
     }
     public void Update()
     {
-        currencyText.text = "Your Money: " + data.money;
-    }
-    
-    public void Generate_Money()
-    {
-        data.money += 1;
+        if(generatingMoney) {
+            data.money += data.moneyPerSecond * Time.deltaTime;
+        }
+        currencyText.text = "Your Money: " + (int)data.money;
     }
 
 }

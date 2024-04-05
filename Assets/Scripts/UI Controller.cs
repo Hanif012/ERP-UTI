@@ -10,11 +10,10 @@ public class UIController : MonoBehaviour
     public Button[] buttons;
     void Start()
     {
-        tabs[0].gameObject.SetActive(false);
-        tabs[1].gameObject.SetActive(false);
-        tabs[2].gameObject.SetActive(false);
-        tabs[3].gameObject.SetActive(false);
-        
+        for(int i=0; i<tabs.Length; i++)
+        {
+            tabs[i].gameObject.SetActive(false);
+        }
     }
     public void tab1()
     {
