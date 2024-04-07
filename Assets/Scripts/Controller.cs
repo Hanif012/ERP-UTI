@@ -8,7 +8,10 @@ public class Controller : MonoBehaviour
 {
     public TMP_Text currencyText;
     public GameData data;
-    bool generatingMoney = true;
+    bool MotorMoney = false;
+    bool MobilMoney = false;
+    bool BusMoney = false;
+    bool KeretaMoney = false;
     public void Start() 
     {
         data = new GameData();
@@ -16,8 +19,8 @@ public class Controller : MonoBehaviour
     }
     public void Update()
     {
-        if(generatingMoney) {
-            data.money += data.moneyPerSecond * Time.deltaTime;
+        if(MotorMoney) {
+            data.money += 1 * Time.deltaTime;
         }
         currencyText.text = "Your Money: " + (int)data.money;
     }
