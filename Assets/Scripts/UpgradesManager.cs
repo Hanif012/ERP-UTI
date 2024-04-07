@@ -10,7 +10,7 @@ public class UpgradesManager : MonoBehaviour
     public double MotorBaseCost;
     public double MotorCostMult;
 
-    public void start()
+    public void Start()
     {
         MotorBaseCost = 10;
         MotorCostMult = 1.5;
