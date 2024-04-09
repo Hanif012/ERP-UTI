@@ -4,15 +4,52 @@ using UnityEngine;
 
 public class Upgrades : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public class UpgradeMobil : Upgrades
     {
-        
+        public void UpgradeBan()
+        {
+
+        }
+
+        public void UpgradeMesin()
+        {
+
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    public class UpgradeMotor : Upgrades
     {
-        
+        public void UpgradeBan()
+        {
+
+        }
+
+        public void UpgradeMesin()
+        {
+
+        }
+
+
     }
+
+    public class UpgradeBus : Upgrades
+    {
+        public void UpgradeBan()
+        {
+            
+        }
+        public void UpgradeMesin()
+        {
+
+        }
+    }
+
+    public class UpgradeKereta : Upgrades
+    {
+        public void UpgradeMesin()
+        {
+
+        }
+    }
+    
 }
