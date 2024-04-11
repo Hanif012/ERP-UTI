@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class UIController : MonoBehaviour
 {
-    public Slider _musicSlider, _sfxSlider;
     public GameObject[] tabs;
     public Button[] buttons;
     void Start()
@@ -61,25 +60,4 @@ public class UIController : MonoBehaviour
             tabs[i].gameObject.SetActive(false);
         }
     }
-
-    public void ToggleMusic()
-    {
-        AudioManager.instance.ToggleMusic();
-    }
-
-    public void ToggleSFX()
-    {
-        AudioManager.instance.ToggleSFX();
-    }
-
-    public void MusicVolume()
-    {
-        AudioManager.instance.MusicVolume(_musicSlider.value);
-    }
-
-    public void SFXVolume()
-    {
-        AudioManager.instance.SFXVolume(_sfxSlider.value);
-    }
-    
 }
