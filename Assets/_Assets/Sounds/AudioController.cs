@@ -6,6 +6,12 @@ using UnityEngine.UI;
 public class AudioController : MonoBehaviour
 {
     public Slider _musicSlider, _sfxSlider;
+    public static AudioController instance;
+
+    private void Awake() {
+        instance = this;
+    }
+    
     public void ToggleMusic()
     {
         AudioManager.instance.ToggleMusic();

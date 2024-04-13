@@ -11,4 +11,5 @@ public class Vehicle : MonoBehaviour
     public double VehicleProduceSpeed;
     public double VehicleProduceAmount;
     public double VehicleUpgradeCost;
+
 }
