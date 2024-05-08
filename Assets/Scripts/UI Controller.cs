@@ -29,7 +29,6 @@ public class UIController : MonoBehaviour
         {
             tabs[i].gameObject.SetActive(false);
             tabs[1].gameObject.SetActive(true);
-
         }
     }
 
