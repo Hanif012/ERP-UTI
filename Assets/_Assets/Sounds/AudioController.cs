@@ -10,6 +10,7 @@ public class AudioController : MonoBehaviour
 
     private void Awake() {
         instance = this;
+        LoadVolume();
     }
     
     public void ToggleMusic()
@@ -38,9 +39,7 @@ public class AudioController : MonoBehaviour
     {
         _musicSlider.value = PlayerPrefs.GetFloat("MusicVolume");
         _sfxSlider.value = PlayerPrefs.GetFloat("SFXVolume");
-    }
-
-    private void Start() {
-        LoadVolume();
+        AudioManager.instance.MusicVolume(_musicSlider.value);
+        AudioManager.instance.SFXVolume(_sfxSlider.value);
     }
 }
