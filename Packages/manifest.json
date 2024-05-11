@@ -2,6 +2,7 @@
   "dependencies": {
     "com.github.superunitybuild.buildactions": "https://github.com/superunitybuild/buildactions.git",
     "com.github.superunitybuild.buildtool": "7.0.0",
+    "com.monitor1394.xcharts": "https://github.com/XCharts-Team/XCharts.git",
     "com.unity.2d.animation": "9.0.4",
     "com.unity.2d.psdimporter": "8.0.4",
     "com.unity.collab-proxy": "2.2.0",
