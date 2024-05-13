@@ -3855,7 +3855,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -4066,6 +4066,34 @@ PrefabInstance:
     - target: {fileID: 5617654003704995681, guid: 82c11a046b3d2f9478ea42978817bc19, type: 3}
       propertyPath: m_Name
       value: Bike
+      objectReference: {fileID: 0}
+    - target: {fileID: 6439871063715915230, guid: 82c11a046b3d2f9478ea42978817bc19, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6439871063715915230, guid: 82c11a046b3d2f9478ea42978817bc19, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6439871063715915230, guid: 82c11a046b3d2f9478ea42978817bc19, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 470558094}
+    - target: {fileID: 6439871063715915230, guid: 82c11a046b3d2f9478ea42978817bc19, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6439871063715915230, guid: 82c11a046b3d2f9478ea42978817bc19, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Purchasing
+      objectReference: {fileID: 0}
+    - target: {fileID: 6439871063715915230, guid: 82c11a046b3d2f9478ea42978817bc19, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PurchaseManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6439871063715915230, guid: 82c11a046b3d2f9478ea42978817bc19, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4305,7 +4333,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20947d265f513e24b8cdb2ccd192530b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentMoney: 0
+  currentMoney: 100
   CurrencyText: {fileID: 1714449186}
 --- !u!4 &1213876801
 Transform:
@@ -7797,7 +7825,9 @@ MonoBehaviour:
   musicSounds:
   - name: BGM
     clip: {fileID: 8300000, guid: fa75b39a773594b42ba21e4cac9211bf, type: 3}
-  sfxSounds: []
+  sfxSounds:
+  - name: Click
+    clip: {fileID: 8300000, guid: c536744b71cdf234299fb29136ea0e6c, type: 3}
   musicSource: {fileID: 1820265730}
   sfxSource: {fileID: 1045170904}
 --- !u!4 &2066751632

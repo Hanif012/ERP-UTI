@@ -9,17 +9,18 @@ public class AudioManager : MonoBehaviour
     public Sound[] musicSounds, sfxSounds;
     public AudioSource musicSource, sfxSource;
 
-    public void Awake() 
+    private void Awake() 
     {
         if(instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(gameObject);
+            Debug.Log("AudioManager instance created");
         }
 
         else
         {
             Destroy(gameObject);
+            Debug.Log("An instance of AudioManager already exists");
         }
     }
 
@@ -56,7 +57,8 @@ public class AudioManager : MonoBehaviour
 
         else
         {
-            sfxSource.PlayOneShot(s.clip);
+            sfxSource.clip = s.clip;
+            sfxSource.Play();
         }
     }
 

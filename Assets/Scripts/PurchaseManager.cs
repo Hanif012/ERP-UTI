@@ -9,14 +9,15 @@ public class PurchaseManager : MonoBehaviour
 
     private void Start() {
         vehicleData = gameObject.GetComponent<Vehicle>();
-        currencyManager = gameObject.GetComponent<CurrencyManager>();
+        currencyManager = FindObjectOfType<CurrencyManager>();
     }
 
     public void Purchasing() {
-        if(currencyManager.currentMoney >= vehicleData.VehiclePrice) {
+        if(currencyManager.currentMoney >= vehicleData.VehiclePrice && !vehicleData.IsBought) {
             currencyManager.currentMoney -= vehicleData.VehiclePrice;
             vehicleData.IsBought = true;
         }
+        AudioManager.instance.PlaySFX("Click");
     }
 
 
