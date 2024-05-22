@@ -14,7 +14,7 @@ public class AudioManager : MonoBehaviour
         if(instance == null)
         {
             instance = this;
-            Debug.Log("AudioManager instance created");
+            // Debug.Log("AudioManager instance created");
         }
 
         else
