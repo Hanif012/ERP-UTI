@@ -20,7 +20,7 @@ public class AudioManager : MonoBehaviour
         else
         {
             Destroy(gameObject);
-            Debug.Log("An instance of AudioManager already exists");
+            // Debug.Log("An instance of AudioManager already exists");
         }
     }
 
