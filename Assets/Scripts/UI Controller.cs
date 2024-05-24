@@ -7,48 +7,71 @@ public class UIController : MonoBehaviour
 {
     public GameObject[] tabs;
     public Button[] buttons;
+
+    private bool isTab = false;
+
+
     void Start()
     {
-        for(int i=0; i<tabs.Length; i++)
-        {
-            tabs[i].gameObject.SetActive(false);
-        }
+        closeall();
     }
     public void tab1()
     {
-        for(int i=0; i<tabs.Length; i++)
+        if(isTab)
         {
-            tabs[i].gameObject.SetActive(false);
+            tabs[0].gameObject.SetActive(false);
+            isTab = false;
+        }
+        else
+        {
+            closeall();
             tabs[0].gameObject.SetActive(true);
+            isTab = true;
         }
     }
 
     public void tab2()
     {
-        for(int i=0; i<tabs.Length; i++)
+        if(isTab)
         {
-            tabs[i].gameObject.SetActive(false);
+            tabs[1].gameObject.SetActive(false);
+            isTab = false;
+        }
+        else
+        {
+            closeall();
             tabs[1].gameObject.SetActive(true);
+            isTab = true;
         }
     }
 
     public void tab3()
     {
-        for(int i=0; i<tabs.Length; i++)
+        if(isTab)
         {
-            tabs[i].gameObject.SetActive(false);
+            tabs[2].gameObject.SetActive(false);
+            isTab = false;
+        }
+        else
+        {
+            closeall();
             tabs[2].gameObject.SetActive(true);
-
+            isTab = true;
         }
     }
 
     public void tab4()
     {
-        for(int i=0; i<tabs.Length; i++)
+        if(isTab)
         {
-            tabs[i].gameObject.SetActive(false);
+            tabs[3].gameObject.SetActive(false);
+            isTab = false;
+        }
+        else
+        {
+            closeall();
             tabs[3].gameObject.SetActive(true);
-
+            isTab = true;
         }
     }
 
