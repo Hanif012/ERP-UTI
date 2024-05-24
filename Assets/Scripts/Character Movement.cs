@@ -1,47 +1,39 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.AI;
 
 public class CharacterMovement : MonoBehaviour
 {
-    public NavMeshAgent agent;
+    public CharacterSpawner characterSpawner;
     public GameObject point;
-    private enum State { pos1, pos2, pos3}
-    private State currentState;
-    private Dictionary<State, Vector3> points;
-    void Start() {
-        points = new Dictionary<State, Vector3>
-        {
-            { State.pos1, point.transform.GetChild(0).position },
-            { State.pos2, point.transform.GetChild(1).position },
-            { State.pos3, point.transform.GetChild(2).position }
-        };
-        currentState = State.pos1;
-
-    }
-    void Update()
-    {
-        if (!agent.pathPending && agent.remainingDistance <= agent.stoppingDistance)
-        {
-            switch (currentState)
-            {
-                case State.pos1:
-                    currentState = State.pos2;
-                    break;
-                case State.pos2:
-                    currentState = State.pos3;
-                    break;
-                case State.pos3:
-                    currentState = State.pos1;
-                    break;
+    public float character_speed = 0.01f;
+    private int state = 0;
+    private void Update() {
+        float arrivalThreshold = 0.01f;
+        if(state == 0){
+            state = 1;
+        }
+        if(state == 1){
+            if(Vector3.Distance(characterSpawner.spawnedCharacter.transform.position, point.transform.GetChild(state).position) < arrivalThreshold){
+                state = 2;
             }
-
-            MoveToPoint(points[currentState]);
         }
+        if(state == 2){
+            if(Vector3.Distance(characterSpawner.spawnedCharacter.transform.position, point.transform.GetChild(state).position) < arrivalThreshold){
+                Destroy(characterSpawner.spawnedCharacter);
+                characterSpawner.isObjectSpawned = false;
+            }
+        }
+        MoveCharacter(state);
     }
-    public void MoveToPoint(Vector3 point)
-        {
-            agent.SetDestination(point);
-        }
+
+    void MoveCharacter(int pos) {
+        float speed = character_speed * Time.deltaTime / 3;
+        characterSpawner.spawnedCharacter.transform.position = Vector3.MoveTowards(characterSpawner.spawnedCharacter.transform.position, point.transform.GetChild(pos).position, speed);
+    }
 }
+    
