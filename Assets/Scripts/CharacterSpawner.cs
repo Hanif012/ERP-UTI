@@ -9,14 +9,14 @@ public class CharacterSpawner : MonoBehaviour
     public GameObject Spawnpoint;
     public GameObject[] vehicleData;
     public GameObject[] vehiclePrefab;
-    private bool[] isBought;
+    private int[] isBought;
     public int vehicleIndex = 0;
     public GameObject spawnedCharacter;
     public bool isObjectSpawned = false;
 
     void Start()
     {
-        isBought = new bool[vehicleData.Length];
+        isBought = new int[vehicleData.Length];
         for (int i = 0; i < vehicleData.Length; i++)
         {
             isBought[i] = vehicleData[i].GetComponent<Vehicle>().IsBought;
@@ -36,7 +36,7 @@ public class CharacterSpawner : MonoBehaviour
         }
 
         if(!isObjectSpawned){
-            if(isBought[vehicleIndex]){
+            if(isBought[vehicleIndex] == 1){
                 SpawnVehicle(vehiclePrefab[vehicleIndex]);
                 isObjectSpawned = true;
             }

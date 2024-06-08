@@ -13,9 +13,9 @@ public class PurchaseManager : MonoBehaviour
     }
 
     public void Purchasing() {
-        if(currencyManager.currentMoney >= vehicleData.VehiclePrice && !vehicleData.IsBought) {
+        if(currencyManager.currentMoney >= vehicleData.VehiclePrice && vehicleData.IsBought == 0) {
             currencyManager.currentMoney -= vehicleData.VehiclePrice;
-            vehicleData.IsBought = true;
+            vehicleData.IsBought = 1;
         }
         AudioManager.instance.PlaySFX("Click");
     }

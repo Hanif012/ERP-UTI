@@ -12,7 +12,7 @@ public class ProduceManager : MonoBehaviour
     }
 
     private void Update() {
-        if(vehicleData.IsBought) {
+        if(vehicleData.IsBought == 1) {
             currencyManager.currentMoney += vehicleData.VehicleProduceAmount * vehicleData.VehicleProduceSpeed * Time.deltaTime;
         }
     }

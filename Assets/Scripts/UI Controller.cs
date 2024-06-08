@@ -75,6 +75,22 @@ public class UIController : MonoBehaviour
         }
     }
 
+    public void setting(){
+
+        if(isTab)
+        {
+            tabs[4].gameObject.SetActive(false);
+            isTab = false;
+        }
+        else
+        {
+            closeall();
+            tabs[4].gameObject.SetActive(true);
+            isTab = true;
+        }
+    
+    }
+
     public void closeall()
     {
         for(int i=0; i<tabs.Length; i++)
