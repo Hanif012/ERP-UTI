@@ -5,41 +5,34 @@ using UnityEngine;
 public class SaveManager : MonoBehaviour
 {
     public CurrencyManager currencyManager;
-    public Vehicle BikeData;
-    public Vehicle CarData;
-    public Vehicle BusData;
-    public Vehicle TrainData;
 
     private void Start() {
         LoadData();
     }
 
-    private void Update() {
-        BikeData = GameObject.Find("Bike").GetComponent<Vehicle>();
-        CarData = GameObject.Find("Car").GetComponent<Vehicle>();
-        BusData = GameObject.Find("Bus").GetComponent<Vehicle>();
-        TrainData = GameObject.Find("Train").GetComponent<Vehicle>();
-    }
-
-    void SaveData(){
-        PlayerPrefs.SetInt("BikeBought", BikeData.IsBought);
-        PlayerPrefs.SetInt("CarBought", CarData.IsBought);
-        PlayerPrefs.SetInt("BusBought", BusData.IsBought);
-        PlayerPrefs.SetInt("TrainBought", TrainData.IsBought);
-
-        PlayerPrefs.SetFloat("Money", (float)currencyManager.currentMoney);
-    }
-
-    void LoadData(){
-        BikeData = PlayerPrefs.GetInt("BikeBought", 0) == 1 ? GameObject.Find("Bike").GetComponent<Vehicle>() : BikeData;
-        CarData = PlayerPrefs.GetInt("CarBought", 0) == 1 ? GameObject.Find("Car").GetComponent<Vehicle>() : CarData;
-        BusData = PlayerPrefs.GetInt("BusBought", 0) == 1 ? GameObject.Find("Bus").GetComponent<Vehicle>() : BusData;
-        TrainData = PlayerPrefs.GetInt("TrainBought", 0) == 1 ? GameObject.Find("Train").GetComponent<Vehicle>() : TrainData;
-        currencyManager.currentMoney = PlayerPrefs.GetFloat("Money", 100f);
-    }
-
-    private void OnApplicationQuit()
-    {
+    private void OnApplicationQuit() {
         SaveData();
     }
+
+    private void SaveData() {
+        for (int i=0; i<transform.childCount; i++) {
+            for (int j=0; j<transform.GetChild(i).childCount; j++) {
+                GameObject Vehicle = transform.GetChild(i).GetChild(j).gameObject;
+                PlayerPrefs.SetInt(Vehicle.GetComponent<Vehicle>().VehicleName + "IsBought", Vehicle.GetComponent<Vehicle>().IsBought);
+            }
+        }
+        PlayerPrefs.SetFloat("Currency", currencyManager.currentMoney);
+    }
+    
+    private void LoadData() {
+        for (int i=0; i<transform.childCount; i++) {
+            for (int j=0; j < transform.GetChild(i).childCount; j++) {
+                GameObject Vehicle = transform.GetChild(i).GetChild(j).gameObject;
+                Vehicle.GetComponent<Vehicle>().IsBought = PlayerPrefs.GetInt(Vehicle.GetComponent<Vehicle>().VehicleName + "IsBought",0);
+            }
+        }
+        currencyManager.currentMoney = PlayerPrefs.GetFloat("Currency", currencyManager.currentMoney);
+    }
+
+    
 }

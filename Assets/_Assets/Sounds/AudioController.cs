@@ -18,7 +18,7 @@ public class AudioController : MonoBehaviour
     
     public void ToggleMusic()
     {
-        Debug.Log(musicMute);
+        // Debug.Log(musicMute);
         AudioManager.instance.ToggleMusic(musicMute);
         if (musicMute) PlayerPrefs.SetInt("MusicMute", 1);
         else PlayerPrefs.SetInt("MusicMute", 0);
@@ -47,7 +47,7 @@ public class AudioController : MonoBehaviour
     
     public void LoadVolume()
     {
-        Debug.Log(PlayerPrefs.GetInt("MusicMute"));
+        // Debug.Log(PlayerPrefs.GetInt("MusicMute"));
         _musicSlider.value = PlayerPrefs.GetFloat("MusicVolume");
         _sfxSlider.value = PlayerPrefs.GetFloat("SFXVolume");
         AudioManager.instance.MusicVolume(_musicSlider.value);

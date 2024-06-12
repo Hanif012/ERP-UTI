@@ -24,7 +24,7 @@ public class CharacterSpawner : MonoBehaviour
     }
     void Update()
     {
-
+        Debug.Log(vehicleIndex);
         for (int i = 0; i < vehicleData.Length; i++)
         {
             isBought[i] = vehicleData[i].GetComponent<Vehicle>().IsBought;
@@ -36,13 +36,12 @@ public class CharacterSpawner : MonoBehaviour
         }
 
         if(!isObjectSpawned){
+            Debug.Log("Spawning Vehicle");
             if(isBought[vehicleIndex] == 1){
                 SpawnVehicle(vehiclePrefab[vehicleIndex]);
                 isObjectSpawned = true;
             }
-            else{
-                vehicleIndex++;
-            }
+            vehicleIndex++;
         }
     }
 

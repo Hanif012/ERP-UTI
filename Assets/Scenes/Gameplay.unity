@@ -9294,6 +9294,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2130233356}
+  - component: {fileID: 2130233357}
   m_Layer: 0
   m_Name: Vehicle Money Produce
   m_TagString: Untagged
@@ -9319,6 +9320,19 @@ Transform:
   - {fileID: 537042670}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2130233357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2130233355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c2680a6ec4c5ca4d85fac14ab2504cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currencyManager: {fileID: 1213876800}
 --- !u!1001 &2135440402
 PrefabInstance:
   m_ObjectHideFlags: 0

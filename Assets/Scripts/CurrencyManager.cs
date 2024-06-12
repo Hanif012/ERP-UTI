@@ -5,7 +5,7 @@ using TMPro;
 
 public class CurrencyManager : MonoBehaviour
 {
-    public double currentMoney = 0;
+    public float currentMoney = 0;
     public TextMeshProUGUI CurrencyText;
 
     private void Update()
