@@ -7,8 +7,7 @@ using UnityEngine.UI;
 
 public class AudioController : MonoBehaviour
 {
-    public Slider _musicSlider, _sfxSlider;
-    public bool musicMute, sfxMute;
+    public Toggle soundToggle, sfxToggle;
     public static AudioController instance;
 
     private void Awake() {
@@ -18,59 +17,37 @@ public class AudioController : MonoBehaviour
     
     public void ToggleMusic()
     {
-        // Debug.Log(musicMute);
-        AudioManager.instance.ToggleMusic(musicMute);
-        if (musicMute) PlayerPrefs.SetInt("MusicMute", 1);
-        else PlayerPrefs.SetInt("MusicMute", 0);
-        musicMute = !musicMute;
+        AudioManager.instance.ToggleMusic(soundToggle.isOn);
+        PlayerPrefs.SetInt("MusicMute", soundToggle.isOn ? 1 : 0);
     }
 
     public void ToggleSFX()
     {
-        AudioManager.instance.ToggleSFX(sfxMute);
-        if(sfxMute) PlayerPrefs.SetInt("SFXMute", 1);
-        else PlayerPrefs.SetInt("SFXMute", 0);
-        sfxMute = !sfxMute;
-    }
-
-    public void MusicVolume()
-    {
-        AudioManager.instance.MusicVolume(_musicSlider.value);
-        PlayerPrefs.SetFloat("MusicVolume", _musicSlider.value);
-    }
-
-    public void SFXVolume()
-    {
-        AudioManager.instance.SFXVolume(_sfxSlider.value);
-        PlayerPrefs.SetFloat("SFXVolume", _sfxSlider.value);
+        AudioManager.instance.ToggleSFX(sfxToggle.isOn);
+        PlayerPrefs.SetInt("SFXMute", sfxToggle.isOn ? 1 : 0);
     }
     
     public void LoadVolume()
-    {
-        // Debug.Log(PlayerPrefs.GetInt("MusicMute"));
-        _musicSlider.value = PlayerPrefs.GetFloat("MusicVolume");
-        _sfxSlider.value = PlayerPrefs.GetFloat("SFXVolume");
-        AudioManager.instance.MusicVolume(_musicSlider.value);
-        AudioManager.instance.SFXVolume(_sfxSlider.value);
-        
+    { 
         if(PlayerPrefs.GetInt("MusicMute") == 1)
         {
-            musicMute = true;
+            soundToggle.isOn = true;
         }
         else
         {
-            musicMute = false;
+            soundToggle.isOn = false;
         }
 
         if(PlayerPrefs.GetInt("SFXMute") == 1)
         {
-            sfxMute = true;
+            sfxToggle.isOn = true;
         }
         else
         {
-            sfxMute = false;
+            sfxToggle.isOn = false;
         }
-        AudioManager.instance.ToggleMusic(musicMute);
-        AudioManager.instance.ToggleSFX(sfxMute);
+
+        AudioManager.instance.ToggleMusic(soundToggle.isOn);
+        AudioManager.instance.ToggleSFX(sfxToggle.isOn);   
     }
 }

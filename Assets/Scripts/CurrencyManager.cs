@@ -10,7 +10,7 @@ public class CurrencyManager : MonoBehaviour
 
     private void Update()
     {
-        CurrencyText.text = "Rp " + CurrencyFormat();
+        CurrencyText.text = "$ " + CurrencyFormat();
     }
 
     public string CurrencyFormat()
