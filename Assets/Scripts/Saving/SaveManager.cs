@@ -1,12 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
 
 public class SaveManager : MonoBehaviour
 {
     public CurrencyManager currencyManager;
+    public GameObject VehicleData;
 
-    private void Start() {
+    private void Awake()
+    {
         LoadData();
     }
 
@@ -14,25 +15,22 @@ public class SaveManager : MonoBehaviour
         SaveData();
     }
 
-    private void SaveData() {
-        for (int i=0; i<transform.childCount; i++) {
-            for (int j=0; j<transform.GetChild(i).childCount; j++) {
-                GameObject Vehicle = transform.GetChild(i).GetChild(j).gameObject;
-                PlayerPrefs.SetInt(Vehicle.GetComponent<Vehicle>().VehicleName + "IsBought", Vehicle.GetComponent<Vehicle>().IsBought);
-            }
-        }
-        PlayerPrefs.SetFloat("Currency", currencyManager.currentMoney);
-    }
-    
-    private void LoadData() {
-        for (int i=0; i<transform.childCount; i++) {
-            for (int j=0; j < transform.GetChild(i).childCount; j++) {
-                GameObject Vehicle = transform.GetChild(i).GetChild(j).gameObject;
-                Vehicle.GetComponent<Vehicle>().IsBought = PlayerPrefs.GetInt(Vehicle.GetComponent<Vehicle>().VehicleName + "IsBought",0);
-            }
-        }
-        currencyManager.currentMoney = PlayerPrefs.GetFloat("Currency", currencyManager.currentMoney);
+    public void SaveData() {
+        SaveSystem.SavingData(currencyManager, VehicleData);
     }
 
-    
+    public void LoadData() {
+        SaveData data = SaveSystem.LoadingData();
+        if (data != null) {
+            currencyManager.currentMoney = data.currency;
+            int count = 0;
+            for (int i=0; i<VehicleData.transform.childCount; i++) {
+                for (int j=0; j<VehicleData.transform.GetChild(i).childCount; j++) {
+                    VehicleData.transform.GetChild(i).GetChild(j).GetComponent<Vehicle>().IsBought = data.isBought[count];
+                    print(data.isBought[count] + " " + count + " " + i + " " + j);
+                    count++;
+                }
+            }
+        }
+    }
 }

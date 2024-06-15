@@ -8,7 +8,7 @@ public class UIController : MonoBehaviour
     public GameObject[] tabs;
     public Button[] buttons;
 
-    private bool isTab = false;
+    // private bool isTab = false;
 
 
     void Start()
@@ -17,76 +17,66 @@ public class UIController : MonoBehaviour
     }
     public void tab1()
     {
-        if(isTab)
+        if(tabs[0].gameObject.activeSelf)
         {
             tabs[0].gameObject.SetActive(false);
-            isTab = false;
         }
         else
         {
             closeall();
             tabs[0].gameObject.SetActive(true);
-            isTab = true;
         }
     }
 
     public void tab2()
     {
-        if(isTab)
+        if(tabs[1].gameObject.activeSelf)
         {
             tabs[1].gameObject.SetActive(false);
-            isTab = false;
         }
         else
         {
             closeall();
             tabs[1].gameObject.SetActive(true);
-            isTab = true;
         }
     }
 
     public void tab3()
     {
-        if(isTab)
+        if(tabs[2].gameObject.activeSelf)
         {
             tabs[2].gameObject.SetActive(false);
-            isTab = false;
         }
         else
         {
             closeall();
             tabs[2].gameObject.SetActive(true);
-            isTab = true;
         }
     }
 
     public void tab4()
     {
-        if(isTab)
+        if(tabs[3].gameObject.activeSelf)
         {
             tabs[3].gameObject.SetActive(false);
-            isTab = false;
         }
         else
         {
             closeall();
             tabs[3].gameObject.SetActive(true);
-            isTab = true;
         }
     }
 
     public void setting(){
 
-        if(isTab)
+        if(tabs[4].gameObject.activeSelf)
         {
             tabs[4].gameObject.SetActive(false);
-            isTab = false;
         }
         else
         {
             closeall();
             tabs[4].gameObject.SetActive(true);
-            isTab = true;
         }
     
     }
