@@ -15,6 +15,10 @@ public class SaveManager : MonoBehaviour
         SaveData();
     }
 
+    private void OnApplicationPause() {
+        SaveData();
+    }
+
     public void SaveData() {
         SaveSystem.SavingData(currencyManager, VehicleData);
     }
@@ -27,7 +31,6 @@ public class SaveManager : MonoBehaviour
             for (int i=0; i<VehicleData.transform.childCount; i++) {
                 for (int j=0; j<VehicleData.transform.GetChild(i).childCount; j++) {
                     VehicleData.transform.GetChild(i).GetChild(j).GetComponent<Vehicle>().IsBought = data.isBought[count];
-                    print(data.isBought[count] + " " + count + " " + i + " " + j);
                     count++;
                 }
             }

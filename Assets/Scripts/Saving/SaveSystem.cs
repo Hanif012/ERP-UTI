@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
+using System.Runtime.InteropServices;
 
 public class SaveSystem {
     
@@ -32,7 +33,7 @@ public class SaveSystem {
                 stream.Close();
                 return null;
             }
-            
+
         } else {
             Debug.LogError("Save file not found in " + path);
             return null;

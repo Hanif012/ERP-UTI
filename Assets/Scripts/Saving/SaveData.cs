@@ -9,6 +9,7 @@ public class SaveData {
 
     public SaveData(CurrencyManager currencyManager, GameObject VehicleData) {
         currency = currencyManager.currentMoney;
+        Debug.Log(Application.persistentDataPath + "/saveData.save");
         isBought = new int[9];
         int count = 0;
         for (int i=0; i<VehicleData.transform.childCount; i++) {
