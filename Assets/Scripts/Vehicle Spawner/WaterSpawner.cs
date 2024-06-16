@@ -4,15 +4,30 @@ using UnityEngine;
 
 public class WaterSpawner : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public GameObject Spawnpoint;
+    public GameObject[] waterData;
+    public GameObject[] waterVehicle;
+    public GameObject spawnedWater;
+    public bool isWaterSpawned = false;
+    private int waterIndex = 0;
+
+    void Update()
     {
+        if(waterIndex >= waterData.Length) 
+            waterIndex = 0;
+        
+        if(!isWaterSpawned){
+            if(waterData[waterIndex].GetComponent<Vehicle>().IsBought == 1){
+                SpawnGround(waterVehicle[waterIndex]);
+                isWaterSpawned = true;
+            }
+            waterIndex++;
+        }
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public void SpawnGround(GameObject vehicle)
+    { 
+        spawnedWater = Instantiate(vehicle, Spawnpoint.transform.position, Quaternion.identity);
     }
 }

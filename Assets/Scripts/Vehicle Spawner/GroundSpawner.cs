@@ -6,7 +6,6 @@ using UnityEngine;
 
 public class GroundSpawner : MonoBehaviour
 {
-    public GroundMovement groundMovement;
     public GameObject Spawnpoint;
     public GameObject[] groundData;
     public GameObject[] groundVehicle;
