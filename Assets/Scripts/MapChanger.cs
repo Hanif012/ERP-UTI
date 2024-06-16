@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class MapChanger : MonoBehaviour
@@ -8,25 +9,24 @@ public class MapChanger : MonoBehaviour
     public GameObject[] Position;
     public int positionIndex = 0;
 
-    public void NextMap()
+    private void onclick()
     {
-        if(MainCam.transform.position == Position[positionIndex].transform.position)
-        {
-            positionIndex++;
-            if(positionIndex >= Position.Length) 
-                positionIndex = 0;
-            MainCam.transform.position = Position[positionIndex].transform.position;
-        }
+        ChangeMap(positionIndex);
     }
-
-    public void PreviousMap()
+    // change the map index 1 is land, 2 is sea, 3 is sky
+    public void ChangeMap(int index)
     {
-        if(MainCam.transform.position == Position[positionIndex].transform.position)
+        if (index == 1)
         {
-            positionIndex--;
-            if(positionIndex < 0) 
-                positionIndex = Position.Length - 1;
-            MainCam.transform.position = Position[positionIndex].transform.position;
+            MainCam.transform.position = new Vector3(Position[0].transform.position.x, Position[0].transform.position.y, MainCam.transform.position.z);
+        }
+        else if (index == 2)
+        {
+            MainCam.transform.position = new Vector3(Position[1].transform.position.x, Position[1].transform.position.y, MainCam.transform.position.z);
+        }
+        else if (index == 3)
+        {
+            MainCam.transform.position = new Vector3(Position[2].transform.position.x, Position[2].transform.position.y, MainCam.transform.position.z);
         }
     }
 }
