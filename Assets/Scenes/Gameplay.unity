@@ -387,7 +387,7 @@ RectTransform:
   m_GameObject: {fileID: 52661160}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 175635940}
@@ -11843,7 +11843,7 @@ RectTransform:
   m_GameObject: {fileID: 1342978130}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1705073121}
@@ -16859,7 +16859,7 @@ MonoBehaviour:
       m_Bottom: 0
   m_Tooltips:
   - m_Show: 1
-    m_Type: 4
+    m_Type: 0
     m_Trigger: 3
     m_TriggerOn: 0
     m_Position: 0
@@ -17104,7 +17104,7 @@ MonoBehaviour:
   m_VisualMaps: []
   m_XAxes:
   - m_Show: 1
-    m_Type: 1
+    m_Type: 3
     m_MinMaxType: 0
     m_GridIndex: 0
     m_PolarIndex: 0
@@ -18344,7 +18344,7 @@ RectTransform:
   m_GameObject: {fileID: 2015806032}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 396883742}
