@@ -9,7 +9,7 @@ public class ParallaxLayer : MonoBehaviour
 
     private void Start()
     {
-        spriteWidth = GetComponentInChildren<SpriteRenderer>().bounds.size.x;
+        spriteWidth = GetComponentInChildren<SpriteRenderer>().bounds.size.x/2;
         startPosition = transform.position;
     }
 
