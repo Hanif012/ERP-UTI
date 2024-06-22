@@ -13,6 +13,7 @@ namespace XCharts.Demo
         System.DateTime now;
         float value;
         float m_LastTime;
+        public Lang lang;
 
         void Awake()
         {
@@ -20,6 +21,8 @@ namespace XCharts.Demo
             chart = gameObject.GetComponent<LineChart>();
             chart.SetMaxCache(maxCache);
             // m_Titles.text  = "Lorem Ipsum";
+            lang = Resources.Load<Lang>("XCLang-EN");
+            
             AddData();
         }
 
