@@ -26,6 +26,7 @@ public class UIController : MonoBehaviour
             closeall();
             tabs[0].gameObject.SetActive(true);
         }
+        AudioManager.instance.PlaySFX("Click");
     }
 
     public void tab2()
@@ -39,6 +40,7 @@ public class UIController : MonoBehaviour
             closeall();
             tabs[1].gameObject.SetActive(true);
         }
+        AudioManager.instance.PlaySFX("Click");
     }
 
     public void tab3()
@@ -52,6 +54,7 @@ public class UIController : MonoBehaviour
             closeall();
             tabs[2].gameObject.SetActive(true);
         }
+        AudioManager.instance.PlaySFX("Click");
     }
 
     public void tab4()
@@ -65,6 +68,7 @@ public class UIController : MonoBehaviour
             closeall();
             tabs[3].gameObject.SetActive(true);
         }
+        AudioManager.instance.PlaySFX("Click");
     }
 
     public void setting(){
@@ -78,7 +82,7 @@ public class UIController : MonoBehaviour
             closeall();
             tabs[4].gameObject.SetActive(true);
         }
-    
+        AudioManager.instance.PlaySFX("Click");
     }
 
     public void closeall()

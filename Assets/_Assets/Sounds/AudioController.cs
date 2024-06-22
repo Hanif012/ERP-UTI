@@ -17,6 +17,7 @@ public class AudioController : MonoBehaviour
     
     public void ToggleMusic()
     {
+        AudioManager.instance.PlaySFX("Click");
         AudioManager.instance.ToggleMusic(soundToggle.isOn);
         PlayerPrefs.SetInt("MusicMute", soundToggle.isOn ? 1 : 0);
         PlayerPrefs.Save();
@@ -24,6 +25,7 @@ public class AudioController : MonoBehaviour
 
     public void ToggleSFX()
     {
+        AudioManager.instance.PlaySFX("Click");
         AudioManager.instance.ToggleSFX(sfxToggle.isOn);
         PlayerPrefs.SetInt("SFXMute", sfxToggle.isOn ? 1 : 0);
         PlayerPrefs.Save();

@@ -28,5 +28,6 @@ public class MapChanger : MonoBehaviour
         {
             MainCam.transform.position = new Vector3(Position[2].transform.position.x, Position[2].transform.position.y, MainCam.transform.position.z);
         }
+        AudioManager.instance.PlaySFX("Click");
     }
 }
