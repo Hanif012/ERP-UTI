@@ -5,7 +5,7 @@ using UnityEngine;
 public class AirMovement : MonoBehaviour
 {
     public AirSpawner airSpawner;
-    private float speed = 10f;
+    private float speed = 5f;
     public GameObject Endpoint;
     
     private void Update() {
