@@ -5,13 +5,13 @@ using System.Runtime.InteropServices;
 
 public class SaveSystem {
     
-    public static void SavingData(CurrencyManager currencyManager, GameObject VehicleData) {
+    public static void SavingData(CurrencyManager currencyManager, GameObject VehicleData, TimeCounter timeCounter) {
         BinaryFormatter formatter = new BinaryFormatter();
 
-        string path = Application.persistentDataPath + "/saveData.save";
+        string path = Application.persistentDataPath + "/Data.save";
         FileStream stream = new FileStream(path, FileMode.Create);
 
-        SaveData data = new SaveData(currencyManager, VehicleData);
+        SaveData data = new SaveData(currencyManager, VehicleData, timeCounter);
 
         formatter.Serialize(stream, data);
         stream.Close();
@@ -19,7 +19,7 @@ public class SaveSystem {
     }
 
     public static SaveData LoadingData() {
-        string path = Application.persistentDataPath + "/saveData.save";
+        string path = Application.persistentDataPath + "/Data.save";
         if (File.Exists(path)) {
             BinaryFormatter formatter = new BinaryFormatter();
             FileStream stream = new FileStream(path, FileMode.Open);

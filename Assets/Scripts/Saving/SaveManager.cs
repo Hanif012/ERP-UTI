@@ -5,6 +5,7 @@ public class SaveManager : MonoBehaviour
 {
     public CurrencyManager currencyManager;
     public GameObject VehicleData;
+    public TimeCounter timeCounter;
 
     private void Awake()
     {
@@ -20,13 +21,14 @@ public class SaveManager : MonoBehaviour
     }
 
     public void SaveData() {
-        SaveSystem.SavingData(currencyManager, VehicleData);
+        SaveSystem.SavingData(currencyManager, VehicleData, timeCounter);
     }
 
     public void LoadData() {
         SaveData data = SaveSystem.LoadingData();
         if (data != null) {
             currencyManager.currentMoney = data.currency;
+            timeCounter.time = data.time;
             int count = 0;
             for (int i=0; i<VehicleData.transform.childCount; i++) {
                 for (int j=0; j<VehicleData.transform.GetChild(i).childCount; j++) {

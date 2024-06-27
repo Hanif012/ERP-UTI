@@ -6,9 +6,11 @@ using UnityEngine;
 public class SaveData {
     public int[] isBought;
     public float currency;
+    public float time;
 
-    public SaveData(CurrencyManager currencyManager, GameObject VehicleData) {
+    public SaveData(CurrencyManager currencyManager, GameObject VehicleData, TimeCounter timeCounter) {
         currency = currencyManager.currentMoney;
+        time = timeCounter.time;
         isBought = new int[9];
         int count = 0;
         for (int i=0; i<VehicleData.transform.childCount; i++) {
