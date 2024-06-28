@@ -1,27 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
 
-public class IdleKing : MonoBehaviour
+public class MasterIdle : MonoBehaviour
 {
     public MissionData missionData;
     public CurrencyManager currencyManager;
-    public int missionGoal;
-    public TMP_Text missionProgress;
+    public float moneyGoal;
+    public float money;
+    public TMPro.TMP_Text missionProgress;
 
     private void Update() {
-        float money = currencyManager.currentMoney;
+        money = currencyManager.currentMoney;
         if(missionData.isCompleted == 0) {
-            missionProgress.text = (int)money + " / " + missionGoal;
-            if(money >= missionGoal) {
+            missionProgress.text = (int)money + " / " + (int)moneyGoal;
+            if(money >= moneyGoal) {
                 missionData.isCompleted = 1;
-                currencyManager.currentMoney += 1000000;
+                currencyManager.currentMoney += 100000000;
             }
         }
         else if(missionData.isCompleted == 1) {
             missionProgress.text = "Completed!";
-        }   
+        }
     }
-
 }

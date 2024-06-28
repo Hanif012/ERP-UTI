@@ -5,22 +5,22 @@ using TMPro;
 
 public class WorkingHours : MonoBehaviour
 {
-    public int isCompleted;
+    public MissionData missionData;
     public CurrencyManager currencyManager;
     public float timeGoal;
     public float time;
     public TMP_Text missionProgress;
 
     private void Update() {
-        time += Time.deltaTime;
-        if(isCompleted == 0) {
-            missionProgress.text = (int)time + " / " + timeGoal;
+        time += Time.deltaTime/3600;
+        if(missionData.isCompleted == 0) {
+            missionProgress.text = (int)time + " / " + (int)timeGoal/3600;
             if(time >= timeGoal) {
-                isCompleted = 1;
+                missionData.isCompleted = 1;
                 currencyManager.currentMoney += 5000000;
             }
         }
-        else if(isCompleted == 1) {
+        else if(missionData.isCompleted == 1) {
             missionProgress.text = "Completed!";
         }
     }

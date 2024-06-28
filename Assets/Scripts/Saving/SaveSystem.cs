@@ -5,13 +5,13 @@ using System.Runtime.InteropServices;
 
 public class SaveSystem {
     
-    public static void SavingData(CurrencyManager currencyManager, GameObject VehicleData, TimeCounter timeCounter) {
+    public static void SavingData(CurrencyManager currencyManager, GameObject VehicleData, TimeCounter timeCounter, GameObject missionData) {
         BinaryFormatter formatter = new BinaryFormatter();
 
         string path = Application.persistentDataPath + "/Data.save";
         FileStream stream = new FileStream(path, FileMode.Create);
 
-        SaveData data = new SaveData(currencyManager, VehicleData, timeCounter);
+        SaveData data = new SaveData(currencyManager, VehicleData, timeCounter, missionData);
 
         formatter.Serialize(stream, data);
         stream.Close();

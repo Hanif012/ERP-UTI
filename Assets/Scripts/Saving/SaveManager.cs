@@ -6,6 +6,7 @@ public class SaveManager : MonoBehaviour
     public CurrencyManager currencyManager;
     public GameObject VehicleData;
     public TimeCounter timeCounter;
+    public GameObject missionData;
 
     private void Awake()
     {
@@ -21,7 +22,7 @@ public class SaveManager : MonoBehaviour
     }
 
     public void SaveData() {
-        SaveSystem.SavingData(currencyManager, VehicleData, timeCounter);
+        SaveSystem.SavingData(currencyManager, VehicleData, timeCounter, missionData);
     }
 
     public void LoadData() {

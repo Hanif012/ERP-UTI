@@ -315,6 +315,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1801773888756215563, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
+      propertyPath: m_text
+      value: 'Reward : $ 1000000000'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1801773888756215563, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
       propertyPath: m_fontAsset
       value: 
       objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -332,7 +336,11 @@ PrefabInstance:
       objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 4164272970287469519, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
       propertyPath: m_Name
-      value: Mission Bar (7)
+      value: Billionaire
+      objectReference: {fileID: 0}
+    - target: {fileID: 5436813167904638466, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
+      propertyPath: m_text
+      value: Obtain 1 Billion Money
       objectReference: {fileID: 0}
     - target: {fileID: 5436813167904638466, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
       propertyPath: m_fontAsset
@@ -342,6 +350,10 @@ PrefabInstance:
       propertyPath: m_sharedMaterial
       value: 
       objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 5557714462680682500, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
+      propertyPath: m_text
+      value: Billionaire
+      objectReference: {fileID: 0}
     - target: {fileID: 5557714462680682500, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -353,7 +365,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4164272970287469519, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1117775832}
+    - targetCorrespondingSourceObject: {fileID: 4164272970287469519, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1117775833}
   m_SourcePrefab: {fileID: 100100000, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
 --- !u!224 &47862881 stripped
 RectTransform:
@@ -472,6 +490,11 @@ RectTransform:
   m_AnchoredPosition: {x: -38.5, y: -1.192}
   m_SizeDelta: {x: 11.0396, y: 11.0396}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &57352524 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4164272970287469519, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
+  m_PrefabInstance: {fileID: 2033495968}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &59348268
 GameObject:
   m_ObjectHideFlags: 0
@@ -2947,6 +2970,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 293868188}
   m_CullTransparentMesh: 1
+--- !u!114 &318257284 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2978947226836797848, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
+  m_PrefabInstance: {fileID: 806790729}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &320506187 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 789081340186333083, guid: 82c11a046b3d2f9478ea42978817bc19, type: 3}
@@ -5707,13 +5741,12 @@ RectTransform:
   - {fileID: 47862881}
   - {fileID: 1076944181}
   - {fileID: 2033495969}
-  - {fileID: 1199908436}
   m_Father: {fileID: 1724940195}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -330.71408}
-  m_SizeDelta: {x: 360, y: 1060.4369}
+  m_AnchoredPosition: {x: 0, y: -276.05508}
+  m_SizeDelta: {x: 360, y: 925.3984}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &643622394
 MonoBehaviour:
@@ -5884,6 +5917,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4164272970287469519, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2060340860}
+    - targetCorrespondingSourceObject: {fileID: 4164272970287469519, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2060340861}
   m_SourcePrefab: {fileID: 100100000, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
 --- !u!224 &648034296 stripped
 RectTransform:
@@ -6988,6 +7024,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1801773888756215563, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
+      propertyPath: m_text
+      value: 'Reward : $ 5000000'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1801773888756215563, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
       propertyPath: m_fontAsset
       value: 
       objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7005,7 +7045,11 @@ PrefabInstance:
       objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 4164272970287469519, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
       propertyPath: m_Name
-      value: Mission Bar (5)
+      value: Time Flies
+      objectReference: {fileID: 0}
+    - target: {fileID: 5436813167904638466, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
+      propertyPath: m_text
+      value: Spend 100 Hours
       objectReference: {fileID: 0}
     - target: {fileID: 5436813167904638466, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
       propertyPath: m_fontAsset
@@ -7015,6 +7059,10 @@ PrefabInstance:
       propertyPath: m_sharedMaterial
       value: 
       objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 5557714462680682500, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
+      propertyPath: m_text
+      value: Time Flies
+      objectReference: {fileID: 0}
     - target: {fileID: 5557714462680682500, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -7026,7 +7074,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4164272970287469519, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1033541021}
+    - targetCorrespondingSourceObject: {fileID: 4164272970287469519, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1033541022}
   m_SourcePrefab: {fileID: 100100000, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
 --- !u!224 &806790730 stripped
 RectTransform:
@@ -7402,6 +7456,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 865582472}
   m_CullTransparentMesh: 1
+--- !u!1 &878346532 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4164272970287469519, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
+  m_PrefabInstance: {fileID: 1076944180}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &879366057
 GameObject:
   m_ObjectHideFlags: 0
@@ -8563,6 +8622,41 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 82c11a046b3d2f9478ea42978817bc19, type: 3}
+--- !u!1 &1033541020 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4164272970287469519, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
+  m_PrefabInstance: {fileID: 806790729}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1033541021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1033541020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cab9012d18589c40b626f69a430a674, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  missionData: {fileID: 1033541022}
+  timeCounter: {fileID: 1936859970}
+  currencyManager: {fileID: 1213876800}
+  timeGoal: 360000
+  timeProgress: {fileID: 318257284}
+--- !u!114 &1033541022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1033541020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d799df9ebf281c048a76ca7cc7bd285f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isCompleted: 0
 --- !u!1 &1035687595
 GameObject:
   m_ObjectHideFlags: 0
@@ -9183,6 +9277,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1801773888756215563, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
+      propertyPath: m_text
+      value: 'Reward : $ 100000000'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1801773888756215563, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
       propertyPath: m_fontAsset
       value: 
       objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9200,7 +9298,11 @@ PrefabInstance:
       objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 4164272970287469519, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
       propertyPath: m_Name
-      value: Mission Bar (8)
+      value: Master Idle
+      objectReference: {fileID: 0}
+    - target: {fileID: 5436813167904638466, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
+      propertyPath: m_text
+      value: Obtain 100 Million Money
       objectReference: {fileID: 0}
     - target: {fileID: 5436813167904638466, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
       propertyPath: m_fontAsset
@@ -9210,6 +9312,10 @@ PrefabInstance:
       propertyPath: m_sharedMaterial
       value: 
       objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 5557714462680682500, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
+      propertyPath: m_text
+      value: Master Idle
+      objectReference: {fileID: 0}
     - target: {fileID: 5557714462680682500, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -9221,13 +9327,49 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4164272970287469519, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1076944182}
+    - targetCorrespondingSourceObject: {fileID: 4164272970287469519, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1076944183}
   m_SourcePrefab: {fileID: 100100000, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
 --- !u!224 &1076944181 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1095554782037763427, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
   m_PrefabInstance: {fileID: 1076944180}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1076944182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 878346532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37463274efd39ce4cb71e3b388dcd3b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  missionData: {fileID: 1076944183}
+  currencyManager: {fileID: 1213876800}
+  moneyGoal: 100000000
+  money: 0
+  missionProgress: {fileID: 1122917457}
+--- !u!114 &1076944183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 878346532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d799df9ebf281c048a76ca7cc7bd285f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isCompleted: 0
 --- !u!1 &1107260766
 GameObject:
   m_ObjectHideFlags: 1
@@ -9328,6 +9470,52 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 290, y: 282.9586}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1117775831 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4164272970287469519, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
+  m_PrefabInstance: {fileID: 47862880}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1117775832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1117775831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3f81faf053917a4899b100d191f9251, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  missionData: {fileID: 1117775833}
+  currencyManager: {fileID: 1213876800}
+  moneyGoal: 1e+9
+  money: 0
+  missionProgress: {fileID: 1757299384}
+--- !u!114 &1117775833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1117775831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d799df9ebf281c048a76ca7cc7bd285f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isCompleted: 0
+--- !u!114 &1122917457 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2978947226836797848, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
+  m_PrefabInstance: {fileID: 1076944180}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1124972497
 GameObject:
   m_ObjectHideFlags: 0
@@ -9737,140 +9925,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 290, y: 282.9586}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1001 &1199908435
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 643622393}
-    m_Modifications:
-    - target: {fileID: 1095554782037763427, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1095554782037763427, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1095554782037763427, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1095554782037763427, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1095554782037763427, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1095554782037763427, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1095554782037763427, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 347.5471
-      objectReference: {fileID: 0}
-    - target: {fileID: 1095554782037763427, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 66.693
-      objectReference: {fileID: 0}
-    - target: {fileID: 1095554782037763427, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1095554782037763427, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1095554782037763427, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1095554782037763427, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1095554782037763427, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1095554782037763427, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1095554782037763427, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1095554782037763427, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1095554782037763427, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1095554782037763427, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1095554782037763427, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1095554782037763427, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1801773888756215563, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-    - target: {fileID: 1801773888756215563, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-    - target: {fileID: 2978947226836797848, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-    - target: {fileID: 2978947226836797848, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-    - target: {fileID: 4164272970287469519, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
-      propertyPath: m_Name
-      value: Mission Bar (10)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5436813167904638466, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-    - target: {fileID: 5436813167904638466, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-    - target: {fileID: 5557714462680682500, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-    - target: {fileID: 5557714462680682500, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
---- !u!224 &1199908436 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 1095554782037763427, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
-  m_PrefabInstance: {fileID: 1199908435}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1213876799
 GameObject:
   m_ObjectHideFlags: 0
@@ -11395,6 +11449,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4164272970287469519, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1346089754}
+    - targetCorrespondingSourceObject: {fileID: 4164272970287469519, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1346089755}
   m_SourcePrefab: {fileID: 100100000, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
 --- !u!224 &1346089753 stripped
 RectTransform:
@@ -11413,9 +11470,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5b139a4db847a84cbe85b9654de0a26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isCompleted: 0
+  missionData: {fileID: 1346089755}
   currencyManager: {fileID: 1213876800}
   missionProgress: {fileID: 1415365658}
+--- !u!114 &1346089755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 103135651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d799df9ebf281c048a76ca7cc7bd285f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isCompleted: 0
 --- !u!1 &1352203296
 GameObject:
   m_ObjectHideFlags: 0
@@ -11500,6 +11570,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1544930934}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1356788717 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2978947226836797848, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
+  m_PrefabInstance: {fileID: 1820548566}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1375688600
 GameObject:
   m_ObjectHideFlags: 0
@@ -12138,6 +12219,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4164272970287469519, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1436181434}
+    - targetCorrespondingSourceObject: {fileID: 4164272970287469519, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1436181435}
   m_SourcePrefab: {fileID: 100100000, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
 --- !u!224 &1436181433 stripped
 RectTransform:
@@ -12158,9 +12242,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeCounter: {fileID: 1936859970}
   currencyManager: {fileID: 1213876800}
-  isCompleted: 0
+  missionData: {fileID: 1436181435}
   timeGoal: 86400
   timeProgress: {fileID: 1126285124}
+--- !u!114 &1436181435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96704903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d799df9ebf281c048a76ca7cc7bd285f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isCompleted: 0
 --- !u!1 &1436202687
 GameObject:
   m_ObjectHideFlags: 0
@@ -14401,6 +14498,17 @@ Transform:
   - {fileID: 1445923758}
   m_Father: {fileID: 2130233356}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1757299384 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2978947226836797848, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
+  m_PrefabInstance: {fileID: 47862880}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1761528448
 GameObject:
   m_ObjectHideFlags: 0
@@ -14668,6 +14776,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4164272970287469519, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1796035615}
+    - targetCorrespondingSourceObject: {fileID: 4164272970287469519, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1796035616}
   m_SourcePrefab: {fileID: 100100000, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
 --- !u!224 &1796035614 stripped
 RectTransform:
@@ -14686,10 +14797,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09383d9cec958dc4ea219e58808bbe64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  missionData: {fileID: 1796035616}
   currencyManager: {fileID: 1213876800}
-  isCompleted: 0
   missionGoal: 1000000
   missionProgress: {fileID: 1399684354}
+--- !u!114 &1796035616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1784801110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d799df9ebf281c048a76ca7cc7bd285f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isCompleted: 0
 --- !u!1001 &1809851811
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15016,6 +15140,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1801773888756215563, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
+      propertyPath: m_text
+      value: 'Reward : $ 100000'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1801773888756215563, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
       propertyPath: m_fontAsset
       value: 
       objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -15033,7 +15161,11 @@ PrefabInstance:
       objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 4164272970287469519, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
       propertyPath: m_Name
-      value: Mission Bar (6)
+      value: Wealth Collector
+      objectReference: {fileID: 0}
+    - target: {fileID: 5436813167904638466, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
+      propertyPath: m_text
+      value: Obtain 100 Thousand Money
       objectReference: {fileID: 0}
     - target: {fileID: 5436813167904638466, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
       propertyPath: m_fontAsset
@@ -15043,6 +15175,10 @@ PrefabInstance:
       propertyPath: m_sharedMaterial
       value: 
       objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 5557714462680682500, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
+      propertyPath: m_text
+      value: Wealth Collector
+      objectReference: {fileID: 0}
     - target: {fileID: 5557714462680682500, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -15054,7 +15190,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4164272970287469519, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1944063298}
+    - targetCorrespondingSourceObject: {fileID: 4164272970287469519, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1944063299}
   m_SourcePrefab: {fileID: 100100000, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
 --- !u!224 &1820548567 stripped
 RectTransform:
@@ -15096,6 +15238,17 @@ Transform:
   - {fileID: 2135440403}
   m_Father: {fileID: 466628200}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1834572730 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2978947226836797848, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
+  m_PrefabInstance: {fileID: 2033495968}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1844391933
 GameObject:
   m_ObjectHideFlags: 1
@@ -15561,6 +15714,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   time: 0
+--- !u!1 &1944063297 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4164272970287469519, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
+  m_PrefabInstance: {fileID: 1820548566}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1944063298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944063297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6238896fb084df74c94e857906dd27b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  missionData: {fileID: 1944063299}
+  currencyManager: {fileID: 1213876800}
+  moneyGoal: 100000
+  money: 0
+  missionProgress: {fileID: 1356788717}
+--- !u!114 &1944063299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944063297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d799df9ebf281c048a76ca7cc7bd285f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isCompleted: 0
 --- !u!1001 &1944428662
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17524,6 +17712,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4164272970287469519, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1980302340}
+    - targetCorrespondingSourceObject: {fileID: 4164272970287469519, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1980302341}
   m_SourcePrefab: {fileID: 100100000, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
 --- !u!224 &1980302339 stripped
 RectTransform:
@@ -17544,9 +17735,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vehicleData: {fileID: 2130233355}
   currencyManager: {fileID: 1213876800}
-  isCompleted: 0
+  missionData: {fileID: 1980302341}
   missionGoal: 9
   missionProgress: {fileID: 1481895857}
+--- !u!114 &1980302341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1637302381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d799df9ebf281c048a76ca7cc7bd285f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isCompleted: 0
 --- !u!1 &1981672339
 GameObject:
   m_ObjectHideFlags: 0
@@ -17974,6 +18178,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1801773888756215563, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
+      propertyPath: m_text
+      value: 'Reward : $ 100000000'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1801773888756215563, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
       propertyPath: m_fontAsset
       value: 
       objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -17991,7 +18199,11 @@ PrefabInstance:
       objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 4164272970287469519, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
       propertyPath: m_Name
-      value: Mission Bar (9)
+      value: Ultimate Tycoon
+      objectReference: {fileID: 0}
+    - target: {fileID: 5436813167904638466, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
+      propertyPath: m_text
+      value: Clear all Mission
       objectReference: {fileID: 0}
     - target: {fileID: 5436813167904638466, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
       propertyPath: m_fontAsset
@@ -18001,6 +18213,10 @@ PrefabInstance:
       propertyPath: m_sharedMaterial
       value: 
       objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 5557714462680682500, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
+      propertyPath: m_text
+      value: Ultimate Tycoon
+      objectReference: {fileID: 0}
     - target: {fileID: 5557714462680682500, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -18012,13 +18228,57 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4164272970287469519, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2033495971}
+    - targetCorrespondingSourceObject: {fileID: 4164272970287469519, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2033495970}
   m_SourcePrefab: {fileID: 100100000, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
 --- !u!224 &2033495969 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1095554782037763427, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
   m_PrefabInstance: {fileID: 2033495968}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2033495970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 57352524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d799df9ebf281c048a76ca7cc7bd285f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isCompleted: 0
+--- !u!114 &2033495971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 57352524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1fa648c499f6044bb09c566053db9af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  missionData: {fileID: 2033495970}
+  currencyManager: {fileID: 1213876800}
+  missionList:
+  - {fileID: 103135651}
+  - {fileID: 1784801110}
+  - {fileID: 96704903}
+  - {fileID: 2060340859}
+  - {fileID: 1637302381}
+  - {fileID: 1033541020}
+  - {fileID: 1944063297}
+  - {fileID: 1117775831}
+  - {fileID: 878346532}
+  missionProgress: {fileID: 1834572730}
 --- !u!1 &2060340859 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4164272970287469519, guid: a3c6314238793ec4baf1ac02cdf515bf, type: 3}
@@ -18036,11 +18296,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66eb63b2971b44540a411c647b5fca9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isCompleted: 0
+  missionData: {fileID: 2060340861}
   currencyManager: {fileID: 1213876800}
   timeGoal: 36000
   time: 0
   missionProgress: {fileID: 1430047599}
+--- !u!114 &2060340861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2060340859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d799df9ebf281c048a76ca7cc7bd285f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isCompleted: 0
 --- !u!1 &2065480320
 GameObject:
   m_ObjectHideFlags: 0

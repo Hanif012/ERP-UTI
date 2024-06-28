@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class TimeGod : MonoBehaviour
+public class TimeFlies : MonoBehaviour
 {
+    public MissionData missionData;
     public TimeCounter timeCounter;
     public CurrencyManager currencyManager;
-    public MissionData missionData;
     public float timeGoal;
     public TMP_Text timeProgress;
 
@@ -17,12 +17,11 @@ public class TimeGod : MonoBehaviour
             timeProgress.text = (int)time + " / " + (int)timeGoal / 3600;
             if(time >= timeGoal) {
                 missionData.isCompleted = 1;
-                currencyManager.currentMoney += 1000000;
+                currencyManager.currentMoney += 5000000;
             }
         }
         else if(missionData.isCompleted == 1) {
             timeProgress.text = "Completed!";
         }
     }
-
 }

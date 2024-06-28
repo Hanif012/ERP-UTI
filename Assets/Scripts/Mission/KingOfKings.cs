@@ -7,7 +7,7 @@ public class KingOfKings : MonoBehaviour
 {
     public GameObject vehicleData;
     public CurrencyManager currencyManager;
-    public int isCompleted;
+    public MissionData missionData;
     public int missionGoal;
     public TMP_Text missionProgress;
 
@@ -18,14 +18,14 @@ public class KingOfKings : MonoBehaviour
                 if(vehicleData.transform.GetChild(i).GetChild(j).GetComponent<Vehicle>().IsBought == 1) count++;
             }
         }
-        if(isCompleted == 0) {
+        if(missionData.isCompleted == 0) {
             missionProgress.text = count + " / " + missionGoal;
             if(count >= missionGoal) {
-                isCompleted = 1;
+                missionData.isCompleted = 1;
                 currencyManager.currentMoney += 250000;
             }
         }
-        else if(isCompleted == 1) {
+        else if(missionData.isCompleted == 1) {
             missionProgress.text = "Completed!";
         }
     }
