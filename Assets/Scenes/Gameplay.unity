@@ -18935,6 +18935,7 @@ MonoBehaviour:
   currencyManager: {fileID: 1213876800}
   VehicleData: {fileID: 2130233355}
   timeCounter: {fileID: 1936859970}
+  missionData: {fileID: 643622392}
 --- !u!1 &2130646796
 GameObject:
   m_ObjectHideFlags: 0
