@@ -18,9 +18,4 @@ public class ParallaxLayer : MonoBehaviour
         float newPosition = Mathf.Repeat(Time.time * scrollSpeed, spriteWidth);
         transform.position = startPosition + Vector3.left * newPosition;
     }
-        //unused sin wave
-        // float time = Time.time;
-        // float offset = Mathf.Sin(time * scrollSpeed);
-        // float newPosition = offset * spriteWidth;
-        // transform.position = startPosition + Vector3.left * newPosition;
 }
